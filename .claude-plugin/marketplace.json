@@ -11,7 +11,7 @@
   "plugins": [
     {
       "name": "claude-chroma",
-      "source": "./claude-chroma",
+      "source": "https://github.com/btangonan/claude-chroma",
       "description": "ChromaDB MCP server management plugin with path validation, migration utilities, and best practices enforcement for persistent AI memory",
       "version": "1.0.0",
       "author": {
