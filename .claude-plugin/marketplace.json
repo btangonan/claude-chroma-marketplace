@@ -1,16 +1,19 @@
 {
-  "name": "Claude Chroma Marketplace",
+  "name": "claude-chroma-marketplace",
   "version": "1.0.0",
   "description": "Official marketplace for Claude Chroma - ChromaDB MCP server management plugin",
-  "author": "Bradley Tangonan",
-  "homepage": "https://github.com/bradleytangonan/claude-chroma-marketplace",
+  "owner": "btangonan",
+  "homepage": "https://github.com/btangonan/claude-chroma-marketplace",
   "plugins": [
     {
       "name": "claude-chroma",
-      "source": "https://github.com/bradleytangonan/claude-chroma",
+      "source": "./claude-chroma",
       "version": "1.0.0",
       "description": "ChromaDB MCP server management plugin with path validation, migration utilities, and best practices enforcement for persistent AI memory",
-      "author": "Bradley Tangonan",
+      "author": {
+        "name": "Bradley Tangonan",
+        "email": "bradley@example.com"
+      },
       "keywords": [
         "chromadb",
         "mcp",
