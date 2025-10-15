@@ -1,3 +1,0 @@
-[submodule "claude-chroma"]
-	path = claude-chroma
-	url = https://github.com/btangonan/claude-chroma.git

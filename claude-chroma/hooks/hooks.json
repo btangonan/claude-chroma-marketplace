@@ -1,0 +1,30 @@
+{
+  "hooks": {
+    "SessionStart": [
+      {
+        "matcher": "startup|resume",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/hooks/auto-setup.sh",
+            "description": "Automatically configure ChromaDB on session start"
+          }
+        ]
+      }
+    ],
+    "PreToolUse": [
+      {
+        "matcher": "mcp__chroma__*",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "python3",
+            "args": ["hooks/validate-chroma-path.py"],
+            "description": "Validate ChromaDB path before MCP operations"
+          }
+        ]
+      }
+    ],
+    "PostToolUse": []
+  }
+}
